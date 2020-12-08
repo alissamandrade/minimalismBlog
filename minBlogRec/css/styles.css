@@ -1,0 +1,313 @@
+/* Global Styles */
+
+body {
+    margin: 0;
+    font-size: 1.125rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.about-me-image {
+    margin-bottom: 2em;
+}
+
+footer {
+    background: #143774;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+hr {
+    background: #717171;
+    margin: 2em 0;
+    height: 1px;
+}
+
+
+/* Global Typography */
+
+
+h1,
+h2,
+h3 {
+    font-family: 'Lora', sans-serif;
+    margin-top: 0;
+    color: #143774;
+}
+
+
+h1 {
+    font-size: 2rem;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+
+a {
+    color: #1792D2;
+}
+
+article p {
+    margin-bottom: 2em;
+}
+
+
+
+a,
+.subtitle {
+    color: #1792D2;
+}
+
+strong {
+    font-weight: 700;
+    color: #717171;
+}
+
+
+/* ++ Article Typography ++ */
+
+.article-read-more,
+.list-link, 
+.subtitle,
+.widget-title {
+    font-weight: bold;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+.article-read-more,
+.article-subtitle,
+.widget-body {
+    font-size: 0.875rem;
+}
+
+
+.article-read-more {
+    text-decoration: none;
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+    color: #143774;
+    text-decoration: underline;
+}
+
+/* ++ h1 Subtitle ++ */
+
+.subtitle {
+    margin: 0;
+    font-size: 0.75rem;
+}
+
+.current-page {
+    border-bottom: 2px solid #143774;
+}
+
+
+/* General Layout */
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background: #F8F8F8;
+    padding: 2em 0;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+
+.about-me-body {
+    margin-bottom: 4em;
+
+}
+
+
+/* General Layout MQ */
+
+@media (min-width: 980px) {
+
+    .flex-container {
+        flex-direction: row;
+    }
+
+    main {
+        width: 65%;
+
+    }
+
+    aside {
+        width: 30%;
+    }
+
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-container {
+    margin-bottom: 1.5em;
+} 
+
+nav li {
+    padding: .5em 0;
+}
+
+.list-item:last-child {
+    margin-bottom: 0;
+}
+
+
+.list-link {
+    color: #717171;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.list-link:hover,
+.list-link:focus {
+    color: #1792D2;
+}
+
+
+/* ++ Nav MQ ++ */
+
+@media (min-width: 980px) {
+    .list-item {
+        margin-left: 2em;
+    }
+
+
+    .title-container {
+        margin-bottom: 0;
+    }
+}
+/* Articles */
+
+
+.article-featured,
+.article-recent {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.article-featured-secondary,
+.article-recent-secondary {
+    order: -1;
+}
+
+.article-subtitle {
+    margin: 2em 0;
+}
+
+
+.article-recent-main {
+    margin-bottom: 2em;
+}
+
+
+
+
+
+@media (min-width: 670px) {
+
+
+    .article-recent {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2em;
+
+    }
+
+    .article-recent-main {
+        width: 60%;
+    }
+
+    .article-recent-secondary {
+        width: 35%;
+    }
+}
+
+/* Widgets */
+
+.sidebar-widget {
+    border: .7em solid #EBEBEB;
+    margin-bottom: 3em;
+    padding: 1em;
+}
+
+.widget-recent-post,
+.widget-about-me {
+    display: flex;
+    flex-direction: column;
+}
+
+.widget-image {
+    order: -1;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+
+.widget-title,
+.widget-recent-post-title {
+    font-size: inherit;
+}
+
+.widget-title {
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 1em;
+    order: -2;
+    
+}
+
+.widget-recent-post-title {
+    font-weight: lighter;
+    margin: 0;
+    
+}
+
+
+
+
+
+
